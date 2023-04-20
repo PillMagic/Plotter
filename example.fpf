@@ -1,0 +1,5 @@
+set mode 3d
+add 2*sin(x)*cos(y) + 4
+add sin(x+y) + sin(x - y)
+set size 15
+

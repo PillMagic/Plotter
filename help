@@ -1,0 +1,75 @@
+This is a man for users PLOTTER_FUNCTION. There is commands of console mode;
+1)\c0;255;0 Command set. \d
+  1. \c0;100;0 Variable color. \d
+--------------------------------------------------------------
+    This function set color. Parametre is neccessery.            
+    \c0;200;255 Synopsis: \d \c255;165;0 "set color -(parametre) (number;number;number)" \d.  
+    That sets some color with RGB.                               
+    \c0;200;255 Synopsis: \d \c255;165;0 "set color -(parametre) opt" \d.
+    This calls new window, when you can choose color.
+    Parametres:
+    1) -a. With it, the function set color of application. Note, that it doesn't set buttons color. 
+    2) -b. With it, the function set color of backround color of 2d grapth.
+    3) -c. With it, the function set color of console.
+    4) -g. With it, the function set color of grapth2d grid color.
+    5) -t. With it, the function set color of console text.
+    6)-p. With it, the function set color of push buttons on the application.
+    \c0;200;255 Example: \d \c255;165;0 "set color -b (100;0;100)" \d.
+    That sets backround color of 2d grapth with RGB color; 
+    \c0;200;255 Example: \d \c255;165;0 "set color -pba opt" \d. 
+    This calls new window, when you can choose color. This colorwill have been by pushbuttons, application, 2d grapth. 
+  2. \c0;100;0 Variable grid \d
+    This function set some settings for grid of 2d grapth. It doesn't work with 3d grapth. Parametre is neccessery.
+    \c0;200;255 Synopsis: \d \c255;165;0 "set grid -(parametre) argument" \d
+    \c0;200;255 Parametres: \d
+    1)-c. With it, the function set color of grid. This is similar to \c255;165;0 "set color -g ..." \d.
+    2)-q. With it, the function set qty grid lines.
+    \c0;200;255 Example: \d \c255;165;0 "set grid -c opt" \d. 
+    That calls new window, when you can choose color for grid.
+    \c0;200;255 Example: \d \c255;165;0 "set grid -q 11" \d. 
+    That set qty grid lines. 
+  3. \c0;100;0 Variable mode \d
+    This function set work mode of application(2d grapth or 3d grapth).
+    \c0;200;255 Synopsis: \d \c255;165;0 "set mode -(parametre) argument" \d. 
+    \c0;200;255 Parametre: \d
+    This move data of function. For example, you want to move in 3d mode, but you want to take all functions from 2d mode to 3d mode
+    \c0;200;255 Arguments: \d
+    1)2d(or 2D). Change mode on 2d grapth.
+    2)3d(or 3D). Change mode on 3d grapth.
+    \c0;200;255 Example: \d \c255;165;0 "set mode 2d" \d.
+    That change your mode on 2d mode.
+    \c0;200;255 Example: \d \c255;165;0 "set mode - 3d" \d. 
+    That change your mode on 3d mode with movement all functions. 
+  4. \c0;100;0 Variable width. \d
+    This function set width of grapth lines. 
+    \c0;200;255 Synopsis: \d \c255;165;0 "set width <number>" \d. 
+    \c0;200;255 Argument \d. The argument is a number. 
+    \c0;200;255 Example: \d \c255;165;0 "set width 10" \d. 
+--------------------------------------------------------------
+2) \c0;255;0 Command read \d
+  This command read instructions from file and perform them
+  \c0;200;255 Synopsis: \d \c255;165;0 "read <file name>" \d
+  read instructions from file, that you've writen
+  \c0;200;255 Synopsis: \d \c255;165;0 "read opt" \d
+  read instructions from file, that you've choosen.
+  \c0;200;255 Example: \d \c255;165;0 "read special_file.nn" \d
+--------------------------------------------------------------
+3) \c0;255;0 Command add \d
+  This command add function
+  \c0;200;255 Synopsis: \d \c255;165;0 "add <function>" \d
+  \c0;200;255 Example: \d \c255;165;0 "add x*x" \d
+--------------------------------------------------------------
+4) \c0;255;0 Command erase \d
+  This command erase function with index <number>. Also you can write \c255;165;0 "last" \d or "first" instead of <number>
+  \c0;200;255 Synopsis: \d \c255;165;0 "erase <number>" \d
+  Erase function with index equal number
+  \c0;200;255 Synopsis: \d \c255;165;0 "erase first" \d
+  Erase first function
+  \c0;200;255 Synopsis: \d \c255;165;0 "erase last" \d
+  Erase last function
+  \c0;200;255 Example: \d \c255;165;0 "erase 2" \d
+--------------------------------------------------------------
+5) \c0;255;0 Command update \d
+  This command update grapth, as if you click the button with label \c255;165;0 "Update" \d
+  \c0;200;255 Synopsis: \d \c255;165;0 "update" \d
+--------------------------------------------------------------\n

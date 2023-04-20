@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fragment.fsh</file>
+        <file>vershina.vsh</file>
+    </qresource>
+</RCC>
